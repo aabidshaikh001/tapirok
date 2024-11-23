@@ -111,15 +111,6 @@ const Footer: React.FC = () => {
           <Link href="/term&conditions" className="text-sm text-gray-600 hover:text-orange-500">Terms & Conditions</Link>{' '}
           |{' '}
           <Link href="/privacy" className="text-sm text-gray-600 hover:text-orange-500">Privacy Policy</Link>
-          <p className="text-sm text-gray-500">
-            Made By{' '}
-            <a
-              className="hover:underline"
-              href="https://www.linkedin.com/in/mohammad-aabid-5231a72b4/"
-            >
-              Mohammad Aabid
-            </a>
-          </p>
         </div>
       </div>
     </footer>

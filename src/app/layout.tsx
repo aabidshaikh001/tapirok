@@ -1,39 +1,40 @@
-'use client';
 
-import React from 'react';
-import Header from '../app/components/Header';
-import Footer from '../app/components/Footer';
-import './globals.css'
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import "./globals.css";
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
-const Layout: React.FC<LayoutProps> = ({ children }) => {
-  return (
-    <>
-      {/* Root HTML structure */}
-      <html lang="en">
-        <head>
-          <link rel="icon" href="./assets/icon.png" />
-        </head>
-        <body className="min-h-screen">
-          {/* Header */}
-          <Header/>
-
-          {/* Main Content */}
-          <main className="flex-grow">{children}</main>
-
-          {/* Footer */}
-          <Footer />
-        </body>
-      </html>
-    </>
-  );
+export const metadata: Metadata = {
+  title: "B2B Service Provider",
+  description: "Looking for a cutting-edge web application to streamline your B2B operations? Our Next.js-powered platform is designed to enhance your business performance with fast, scalable, and SEO-optimized solutions. Tailored for modern enterprises, our app ensures seamless integration and unmatched functionality for B2B service providers.",
 };
 
-export default Layout;
-
-
-
- 
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <Header/>
+        {children}
+       <Footer/>
+      </body>
+    </html>
+  );
+}
