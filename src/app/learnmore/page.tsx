@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
-import { FaCode, FaUsers, FaLightbulb, FaCogs, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiMongodb, SiExpress, SiPhp, SiTensorflow, SiJavascript } from 'react-icons/si';
+import { FaCode, FaUsers, FaLightbulb, FaCogs, FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiMongodb, SiExpress, SiPhp, SiTensorflow } from 'react-icons/si';
 import { BsFillGearFill } from 'react-icons/bs'; // Gear icon for .NET
 import { AiFillCode } from 'react-icons/ai'; // Using AiFillCode for Java as a substitute
 import { motion } from 'framer-motion'; // Import Framer Motion

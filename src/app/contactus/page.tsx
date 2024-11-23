@@ -39,7 +39,7 @@ const ContactUs: React.FC = () => {
   };
 
   const validateForm = (): FormErrors => {
-    let formErrors: FormErrors = {};
+    const formErrors: FormErrors = {};
     if (!formData.name.trim()) formErrors.name = "Name is required.";
     if (!formData.email.trim()) formErrors.email = "Email is required.";
     if (!/\S+@\S+\.\S+/.test(formData.email)) formErrors.email = "Email is invalid.";

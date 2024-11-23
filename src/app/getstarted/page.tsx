@@ -10,7 +10,7 @@ function GetStarted() {
       <div className="max-w-screen-xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-800">Let's Get Started</h1>
+          <h1 className="text-4xl font-bold text-gray-800">Let&apos;s Get Started</h1>
           <p className="mt-2 text-gray-600">
             Begin your journey with Tapirsoft and bring your ideas to life with our cutting-edge solutions.
           </p>
@@ -46,7 +46,7 @@ function GetStarted() {
         {/* CTA Section */}
         <div className="cta-section mt-12 text-center">
           <p className="text-lg text-gray-600 mb-6">
-            Ready to get started? Contact us now and let's bring your ideas to life.
+            Ready to get started? Contact us now and let&apos;s bring your ideas to life.
           </p>
           <Link
             href="/contactus"
