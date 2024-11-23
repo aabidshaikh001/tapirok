@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React, { useState } from 'react';
 
 const TeamPage = () => {
@@ -55,7 +56,7 @@ const TeamPage = () => {
             onMouseEnter={() => setHoveredMember(index)}
             onMouseLeave={() => setHoveredMember(null)}
           >
-            <img
+            <Image
               src={member.img}
               alt={member.name}
               className="w-32 h-32 mx-auto rounded-full mb-4 transition-transform duration-300 transform hover:scale-110"

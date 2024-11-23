@@ -3,6 +3,7 @@ import React from 'react';
 import { TiSocialLinkedin } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { FaInstagramSquare } from "react-icons/fa";
+import Image from 'next/image';
 
 const AboutUs = () => {
   const teamMembers = [
@@ -77,7 +78,7 @@ const AboutUs = () => {
                 key={index}
                 className="team-member p-6 bg-white dark:bg-gray-700 rounded-lg shadow-lg group transform transition-transform duration-500 hover:scale-105 animate-slide-in"
               >
-                <img
+                <Image
                   src={member.img}
                   alt={member.name}
                   className="w-32 h-32 mx-auto rounded-full mb-4"

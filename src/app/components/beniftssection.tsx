@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { FaHandHoldingUsd, FaUsers, FaShoppingBag } from 'react-icons/fa'; // Import React Icons
 
@@ -92,7 +93,7 @@ const BenefitsSection: React.FC = () => {
 
           {/* Right Column: Illustration */}
           <div className="lg:w-1/3">
-            <img
+            <Image
               src="/assets/GIF.gif"
               alt="Benefits Illustration"
               className={`w-72 h-auto transition-transform duration-1000 ease-in-out ${

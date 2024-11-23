@@ -15,6 +15,7 @@ import { FcReadingEbook } from "react-icons/fc";
 import BenefitsSection from '../app/components/beniftssection';
 import { motion } from 'framer-motion';
 import FaqSection from '../app/components/faq';
+import Image from 'next/image';
 
 
 
@@ -90,7 +91,7 @@ function Home() {
         <Slider {...fullScreenSliderSettings} className="w-full h-full">
           {heroSliderImages.map((image, index) => (
             <div key={index} className="w-full h-screen">
-              <img
+              <Image
                 src={image}
                 alt={`slide-${index}`}
                 className="object-cover  w-full h-full"
@@ -141,7 +142,7 @@ function Home() {
       </div>
     </div>
     <div className="lg:mt-0 lg:col-span-5 lg:flex">
-      <img
+      <Image
         src="/assets/hero4.jpg"
         alt="mockup"
         className="w-full h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500"
@@ -191,7 +192,7 @@ function Home() {
               data-aos="fade-up"
               data-aos-delay={`${index * 200}`}
             >
-              <img src={award.logo} alt={`${award.title} logo`} className="w-fit h-20 mb-4" />
+              <Image src={award.logo} alt={`${award.title} logo`} className="w-fit h-20 mb-4" />
               <h3 className="text-xl font-semibold text-gray-800">{award.title}</h3>
               <p className="text-gray-600 text-center mt-2">{award.description}</p>
             </div>
@@ -214,7 +215,7 @@ function Home() {
           {/* Logos Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
             {logoData.map((logo, index) => (
-              <img key={index} src={logo.src} alt={logo.alt} className="w-40 mx-auto" />
+              <Image key={index} src={logo.src} alt={logo.alt} className="w-40 mx-auto" />
             ))}
           </div>
         </div>

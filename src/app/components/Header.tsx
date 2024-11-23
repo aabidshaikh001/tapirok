@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation'; // usePathname for dynamic active
 import Link from 'next/link'; // Next.js navigation
 import { IoMenu } from 'react-icons/io5'; // Icon for menu toggle
 import { FaWhatsapp } from 'react-icons/fa'; // WhatsApp icon
+import Image from 'next/image';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Header: React.FC = () => {
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           {/* Logo Section */}
           <a href="#" className="flex items-center">
-            <img
+            <Image
               src="/assets/logo.webp"
               className="mr-3 h-10 sm:h-9"
               alt="Tapirsoft Logo"
