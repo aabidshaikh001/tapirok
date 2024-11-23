@@ -82,6 +82,8 @@ const AboutUs = () => {
                   src={member.img}
                   alt={member.name}
                   className="w-32 h-32 mx-auto rounded-full mb-4"
+                  height={100}
+                  width={100}
                 />
                 <h3 className="text-xl font-medium mb-2">{member.name}</h3>
                 <p className="text-gray-600 dark:text-gray-400">{member.role}</p>

@@ -16,6 +16,8 @@ const Footer: React.FC = () => {
               src="/assets/logo.webp"
               alt="Tapirsoft Logo"
               className="w-32"
+              height={100}
+              width={100}
             />
             <p className="text-gray-700">
               Monday – Friday: <br />

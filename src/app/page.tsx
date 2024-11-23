@@ -95,6 +95,8 @@ function Home() {
                 src={image}
                 alt={`slide-${index}`}
                 className="object-cover  w-full h-full"
+                height={700}
+                width={700}
               />
             </div>
           ))}
@@ -146,7 +148,8 @@ function Home() {
         src="/assets/hero4.jpg"
         alt="mockup"
         className="w-full h-auto object-cover rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-500"
-      />
+        height={700}
+        width={700}/>
     </div>
   </div>
 </section>
@@ -192,7 +195,8 @@ function Home() {
               data-aos="fade-up"
               data-aos-delay={`${index * 200}`}
             >
-              <Image src={award.logo} alt={`${award.title} logo`} className="w-fit h-20 mb-4" />
+              <Image src={award.logo} alt={`${award.title} logo`} className="w-fit h-20 mb-4"    height={100}
+                width={100} />
               <h3 className="text-xl font-semibold text-gray-800">{award.title}</h3>
               <p className="text-gray-600 text-center mt-2">{award.description}</p>
             </div>
@@ -215,7 +219,8 @@ function Home() {
           {/* Logos Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 justify-center items-center">
             {logoData.map((logo, index) => (
-              <Image key={index} src={logo.src} alt={logo.alt} className="w-40 mx-auto" />
+              <Image key={index} src={logo.src} alt={logo.alt} className="w-40 mx-auto"    height={100}
+              width={100}/>
             ))}
           </div>
         </div>

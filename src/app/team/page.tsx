@@ -59,6 +59,8 @@ const TeamPage = () => {
             <Image
               src={member.img}
               alt={member.name}
+              height={300}
+              width={300}
               className="w-32 h-32 mx-auto rounded-full mb-4 transition-transform duration-300 transform hover:scale-110"
             />
             <h3 className="text-xl font-medium mb-2">{member.name}</h3>

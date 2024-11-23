@@ -95,6 +95,8 @@ const BenefitsSection: React.FC = () => {
           <div className="lg:w-1/3">
             <Image
               src="/assets/GIF.gif"
+              height={100}
+              width={100}
               alt="Benefits Illustration"
               className={`w-72 h-auto transition-transform duration-1000 ease-in-out ${
                 isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'

@@ -30,6 +30,7 @@ const Header: React.FC = () => {
               className="mr-3 h-10 sm:h-9"
               alt="Tapirsoft Logo"
               width={100}
+              height={100}
             />
           </a>
 
