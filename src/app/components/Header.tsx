@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { usePathname } from 'next/navigation'; // usePathname for dynamic active links
-import Link from 'next/link'; // Next.js navigation
+import { Link } from "react-router-dom";
 import { IoMenu } from 'react-icons/io5'; // Icon for menu toggle
 import { FaWhatsapp } from 'react-icons/fa'; // WhatsApp icon
 import Image from 'next/image';
@@ -74,7 +74,7 @@ const Header: React.FC = () => {
               ].map((item) => (
                 <li key={item.path}>
                   <Link
-                    href={item.path}
+                    to={item.path}
                     className={`block py-2 pr-4 pl-3 text-gray-700 rounded lg:bg-transparent lg:text-primary-700 lg:p-0 dark:text-white hover:text-orange-500 ${
                       pathname === item.path ? 'text-orange-500 font-semibold' : ''
                     }`}

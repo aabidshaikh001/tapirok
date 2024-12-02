@@ -1,25 +1,12 @@
-
-import type { Metadata } from "next";
-import localFont from "next/font/local";
+'use client'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRoutes from "./approutes";
+import ScrollToTop from "./scrolltop";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
-export const metadata: Metadata = {
-  title: "B2B Service Provider",
-  description: "Looking for a cutting-edge web application to streamline your B2B operations? Our Next.js-powered platform is designed to enhance your business performance with fast, scalable, and SEO-optimized solutions. Tailored for modern enterprises, our app ensures seamless integration and unmatched functionality for B2B service providers.",
-};
 
 export default function RootLayout({
   children,
@@ -28,12 +15,26 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <Header/>
-        {children}
-       <Footer/>
+     
+      <head>
+    <title>TapirSoft: Your Trusted B2B Software Solutions Provider</title>
+    <meta name="description" content="TapirSoft provides cutting-edge B2B software solutions tailored to streamline your business operations and drive growth. Discover how we can empower your business." />
+    <meta name="keywords" content="TapirSoft, B2B software solutions, business software, enterprise solutions, software provider, business growth, streamline operations" />
+    <meta name="author" content="TapirSoft" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assests/TAPIR.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assests/TAPIR.jpg" type="image/x-icon" />
+</head>
+
+        
+      <body>
+         <Router>
+          <ScrollToTop/>
+      <Header/>
+      <AppRoutes/>
+
+          <Footer/>
+        </Router>
       </body>
     </html>
   );

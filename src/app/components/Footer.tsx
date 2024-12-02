@@ -1,7 +1,7 @@
 'use client';  // Mark this file as a client-side component
 
 import React from 'react';
-import Link from 'next/link';
+import { Link } from "react-router-dom";
 import Image from 'next/image';
 
 const Footer: React.FC = () => {
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {['About Tapir', 'Our Philosophy', 'Portfolio', 'Our Team', 'Our Partners', 'Contact Us'].map((item, index) => (
                 <li key={index}>
-                  <Link href="#" className="text-gray-600 hover:text-orange-500">{item}</Link>
+                  <Link to="#" className="text-gray-600 hover:text-orange-500">{item}</Link>
                 </li>
               ))}
             </ul>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 'E-Commerce',
               ].map((industry, index) => (
                 <li key={index}>
-                  <Link href="#" className="text-gray-600 hover:text-orange-500">{industry}</Link>
+                  <Link to="#" className="text-gray-600 hover:text-orange-500">{industry}</Link>
                 </li>
               ))}
             </ul>
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               {['Design & Development', 'Solution', 'Technology'].map((service, index) => (
                 <li key={index}>
-                  <Link href="#" className="text-gray-600 hover:text-orange-500">{service}</Link>
+                  <Link to="#" className="text-gray-600 hover:text-orange-500">{service}</Link>
                 </li>
               ))}
             </ul>
@@ -111,9 +111,9 @@ const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="mt-8 text-center">
           <p className="text-sm text-gray-500">&copy; 2018-2024 TAPIRSOFT. All Rights Reserved</p>
-          <Link href="/term&conditions" className="text-sm text-gray-600 hover:text-orange-500">Terms & Conditions</Link>{' '}
+          <Link to="/term&conditions" className="text-sm text-gray-600 hover:text-orange-500">Terms & Conditions</Link>{' '}
           |{' '}
-          <Link href="/privacy" className="text-sm text-gray-600 hover:text-orange-500">Privacy Policy</Link>
+          <Link to="/privacy" className="text-sm text-gray-600 hover:text-orange-500">Privacy Policy</Link>
         </div>
       </div>
     </footer>

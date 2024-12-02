@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Link from 'next/link';  // Using Link for navigation
+import { Link } from "react-router-dom";
 import { FaCheckCircle, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './GetStarted.css'; // Custom CSS for the page
 
@@ -49,7 +49,7 @@ function GetStarted() {
             Ready to get started? Contact us now and let&apos;s bring your ideas to life.
           </p>
           <Link
-            href="/contactus"
+            to="/contactus"
             className="inline-flex items-center justify-center px-6 py-3 text-lg font-medium text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 transition duration-500"
           >
             Contact Us

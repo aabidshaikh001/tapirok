@@ -3,7 +3,7 @@ import React,{useEffect} from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import Link from 'next/link'; // Next.js navigation
+import { Link } from "react-router-dom";
 import { FaRegCreditCard, FaBatteryHalf, FaFileInvoiceDollar } from 'react-icons/fa';
 import StatsSection from '../app/components/StatsSection';
 import AOS from 'aos';
@@ -111,7 +111,7 @@ function Home() {
             At Tapirsoft, we leverage innovative technology and expert craftsmanship to turn your visions into reality. From concept to deployment, our dedicated team is committed to delivering high-quality software solutions tailored to your unique needs.
           </p>
           <div className="flex space-x-2">
-            <Link href="/getstarted"
+            <Link to="/getstarted"
               className="inline-flex items-center justify-center px-4 py-2 text-base font-medium bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:ring-orange-300 transition duration-500"
             >
               Get Started
@@ -131,12 +131,12 @@ function Home() {
         We provide world-class software solutions to bring your ideas to life. Join us in shaping tomorrow with cutting-edge technology.
       </p>
       <div className="flex flex-col sm:flex-row">
-        <Link href="/getstarted"
+        <Link to="/getstarted"
           className="inline-flex items-center justify-center px-4 py-2 mb-2 sm:mb-0 sm:mr-2 text-base font-medium text-center text-white bg-orange-500 rounded-lg hover:bg-orange-600 focus:ring-4 focus:ring-primary-300 transform transition duration-500 hover:scale-105"
         >
           Get Started
         </Link>
-        <Link href="/learnmore"
+        <Link to="/learnmore"
           className="inline-flex items-center justify-center px-4 py-2 text-base font-medium text-center text-gray-900 border border-gray-300 hover:bg-gray-100 rounded-lg focus:ring-4 focus:ring-gray-100 transform transition duration-500 hover:scale-105"
         >
           Learn More
