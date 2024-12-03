@@ -100,7 +100,7 @@ const BenefitsSection: React.FC = () => {
               alt="Benefits Illustration"
               className={`w-72 h-auto transition-transform duration-1000 ease-in-out ${
                 isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'
-              }`}
+              }`} unoptimized
             />
           </div>
         </div>
