@@ -21,8 +21,7 @@ export default function RootLayout() {
         />
         <meta name="author" content="TapirSoft" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="/assests/TAPIR.jpg" type="image/x-icon" />
-        <link rel="shortcut icon" href="/assests/TAPIR.jpg" type="image/x-icon" />
+    
       </head>
       <body>
         <Router>
