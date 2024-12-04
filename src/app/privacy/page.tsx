@@ -3,7 +3,7 @@ import React from 'react'
 
 function Privacy() {
   return (
-    <div className="terms-conditions-page bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 p-6 lg:mt-14 mb-16">
+    <div className="terms-conditions-page bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 p-6 lg:pt-20 mb-16">
       <h1 className="text-6xl font-bold mb-4 text-center">Privacy Policy</h1>
       <h1 className="text-2xl font-extralight mb-4 text-center">for Tecnologia LLC</h1>
 

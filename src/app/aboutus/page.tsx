@@ -40,7 +40,7 @@ const AboutUs = () => {
   ];
 
   return (
-    <div className="about-us-page lg:mt-14 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200">
+    <div className="about-us-page lg:pt-14 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200">
       {/* Hero Section */}
       <section className="hero-section bg-gray-100 dark:bg-gray-800 py-16 animate-fade-in">
         <div className="container mx-auto px-4 text-center">

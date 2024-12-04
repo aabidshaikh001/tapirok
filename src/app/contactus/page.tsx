@@ -82,7 +82,7 @@ const ContactUs: React.FC = () => {
   }, []);
 
   return (
-    <div className="container lg:mt-14 mx-auto p-8 bg-gray-100 dark:bg-gray-800 min-h-screen flex flex-col items-center justify-center">
+    <div className="container lg:pt-20 mx-auto p-8 bg-gray-100 dark:bg-gray-800 min-h-screen flex flex-col items-center justify-center">
       <ToastContainer />
 
       <div className="text-center mb-8">

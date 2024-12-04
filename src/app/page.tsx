@@ -87,16 +87,16 @@ function Home() {
   return (
     <>
       {/* Full-screen Carousel before Hero Section */}
-      <div className="relative w-full min-h-screen lg:mt-14">
+      <div className="relative w-full min-h-screen lg:pt-14">
         <Slider {...fullScreenSliderSettings} className="w-full h-full">
           {heroSliderImages.map((image, index) => (
             <div key={index} className="w-full h-screen">
               <Image
                 src={image}
                 alt={`slide-${index}`}
-                className="object-cover  w-full h-full"
-                height={700}
-                width={700}
+                className="object-cover w-full h-full"
+                height={1000}
+                width={1000} priority
               />
             </div>
           ))}

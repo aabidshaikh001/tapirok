@@ -42,7 +42,7 @@ const TeamPage = () => {
   ];
 
   return (
-    <div className="team-page lg:mt-14 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 p-6">
+    <div className="team-page lg:pt-20 bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-200 p-6">
       <h1 className="text-4xl font-bold mb-4 text-center animate-fade-in">Meet Our Team</h1>
       <p className="text-lg text-center mb-8">
         Our team is composed of highly skilled and passionate professionals dedicated to building cutting-edge software solutions.

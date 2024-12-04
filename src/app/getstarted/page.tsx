@@ -6,7 +6,7 @@ import './GetStarted.css'; // Custom CSS for the page
 
 function GetStarted() {
   return (
-    <div className="get-started-container lg:mt-14 py-12 bg-gray-100">
+    <div className="get-started-container lg:pt-14 py-12 bg-gray-100">
       <div className="max-w-screen-xl mx-auto px-4">
         {/* Header Section */}
         <div className="text-center mb-8">

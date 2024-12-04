@@ -9,7 +9,7 @@ import '../../app/bgwhite.css'
 
 const LearnMore = () => {
   return (
-    <div className="container lg:mt-14 mx-auto px-4 py-16">
+    <div className="container lg:pt-20 mx-auto px-4 py-16">
       <motion.h1
         className="text-4xl font-bold text-center mb-8"
         initial={{ opacity: 0, y: -50 }}

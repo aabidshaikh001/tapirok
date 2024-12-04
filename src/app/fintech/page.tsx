@@ -8,7 +8,7 @@ import { FcReadingEbook } from "react-icons/fc";
 import '../../app/bgwhite.css'
 function Fintech() {
   return (
-    <div className="bg-gray-100 lg:mt-14 min-h-screen">
+    <div className="bg-gray-100 lg:pt-14 min-h-screen">
       <header className="py-10 text-center animate-fade-in">
         <motion.h1
           className="text-4xl font-bold text-gray-800"
